@@ -1,0 +1,95 @@
+@import url("https://fonts.cdnfonts.com/css/industry-test");
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: "Industry Test", sans-serif;
+}
+
+.spinner {
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    border: 16px solid gray;
+    border-radius: 50%;
+    border-bottom: 15px solid darkturquoise;
+    animation: spinner 2s linear infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.task2 {
+    margin-left: 50px;
+    border: 1px solid black;
+    width: 250px;
+    height: 150px;
+    padding: 16px;
+    background-image: linear-gradient(45deg, #09E6F2, #810AD0);
+    animation: bg 5s alternate infinite;
+    background-size: 300%;
+}
+
+@keyframes bg {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.task3 {
+    color: green;
+    animation: tcolor 5s alternate infinite;
+}
+
+@media screen and (min-width: 1024px){
+    .task3 {
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 481px) and (max-width:1023px) {
+    .task3 {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .task3 {
+        font-size: 1rem;
+    }
+}
+
+@keyframes tcolor {
+    0% {
+        color: green;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: blue;
+    }
+}
+
+.task4a{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    box-shadow: 6px 6px 20px black;
+    margin: 50px;
+}
+
+.task4b{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    box-shadow: -6px -6px 20px black;
+    margin: 50px;
+}
